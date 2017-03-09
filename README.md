@@ -12,42 +12,26 @@ Decisions need specific ids. From these ids, consequences and decisions can be d
 
 An example quest:
 
-- Capture 20 butterflies
+Scout (but do not engage) a warlord
+===================================
 
-Decisions: Accept/Reject
+Quest description: 
 
-Accept - you are now actively participating in the removal of 20 butterflies
+- observe an orc warlord from 5pm to 6pm (in game time) and live
 
-Reject - nothing is done to the butterfly population
+- issued out by intelligence guild
 
-Questions: 
+Success conditions:
 
-- Is there a time limit?
+- orc warlord does not recognise anything suspicious (this needs to be defined)
 
-- Who requested this quest? Is this person the same person that gives you the reward?
+- you are still alive
 
-Consequences:
+- was able to be in the observable proximity (to be defined) of the orc warlord presence
 
-- Regardless of things, it will add your decisions to the action log to be used later for future quests
+Immediate decisions:
 
-- Accept:
+- Accept the quest
 
-1. Succeeding - there is 20 less butterflies in the world
+- Reject the quest - also ignore the quest as well
 
-Effects: 
-
-- may have an impact on the economy
-
-- may reduce the likeliness that this quest appears again
-
-2. Failure - nothing is done about the butterflies
-
-- 
-
-- Reject
-
-1. Could have an impact on your reputation 
-
-- either stingy or known for not taking easy quests
-
-- 
