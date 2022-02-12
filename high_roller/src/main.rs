@@ -7,12 +7,6 @@ async fn index(web::Path((id, name)): web::Path<(u32, String)>) -> impl Responde
     format!("Hello {}! id:{}", name, id)
 }
 
-// #[get("/dice/roll")]
-// async fn roll_dice() -> impl Responder {
-//     let mut rng = rand::thread_rng();
-//     return web::Json(Dice{rolled_value: rng.gen_range(1..6)})
-// }
-
 async fn ping(_req: HttpRequest) -> impl Responder {
     format!(
         "I am healthy: {} v{}", env!("CARGO_PKG_DESCRIPTION"), env!("CARGO_PKG_VERSION")
@@ -27,7 +21,7 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(|| 
         App::new()
             .wrap(middleware::Logger::default())
-            .service(dice::roll_dice)
+            .service(dice::roll_dice_controller)
             .service(index)
             .route("/ping", web::get().to(ping))
         )
